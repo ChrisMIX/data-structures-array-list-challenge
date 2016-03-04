@@ -8,6 +8,10 @@ class ArrayList
     Array.new(size)
   end
 
+  def add(element)
+    self << element
+  end
+
   def get(index)
     if index >= 0 && index <= @content.length
       @content[index]
@@ -18,5 +22,9 @@ class ArrayList
 
   def set(index, element)
     @content[index] = element
+  end
+
+  def length
+    self.length
   end
 end
